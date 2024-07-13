@@ -1,22 +1,11 @@
 import logo from './logo.svg';
-import MainComponent from './component/home'
 import './App.css';
+import Game from './component/tictac/game';
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header"> */}
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <MainComponent />
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      {/* </header> */}
+    <div >
+        <Game />
     </div>
   );
 }
