@@ -10,7 +10,7 @@ export default function Game(){
     let description;
 // console.log(history)
     function handlePlay(nextSquares){
-        // add only upto currentMove.
+        // add only upto currentMove. here we have done  + 1 because slice wont include last index.
         const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
         setHistory(nextHistory);
         //current move of squares.
